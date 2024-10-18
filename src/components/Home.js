@@ -5,8 +5,6 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Serach from './Serach';
 import { Link } from 'react-router-dom';
-import TradeViewChart from 'react-crypto-chart';
-import { Diversity1 } from '@mui/icons-material';
 const Home = () => {
   const { CryptoDataV1, CryptoDataV2 } = useContext(ContextCrypto);
   let iconStyles = {
@@ -18,7 +16,7 @@ const Home = () => {
         <div className="scroll-text">{CryptoDataV1.map((coin , key)=>(
           <div className='datacoin'>
             <p id={coin.price_change_percentage_24h > 0 ?'greeni':'redi'}>{coin.price_change_percentage_24h > 0?<ArrowDropUpIcon style={iconStyles}/> :<ArrowDropDownIcon style={iconStyles}/>}</p>
-            <img src={coin.image}/>
+            <img src={coin.image} alt="coin icon"/>
             <p>{coin.symbol}:  </p>
             <p >{coin.price_change_percentage_24h.toFixed(2)}&nbsp;&nbsp;</p>
           </div>
@@ -50,7 +48,7 @@ const Home = () => {
                     <td>{data.rank}</td>
                     <td id='imgname'>
                       <div className='imgname'>
-                      <img src={matchingDataV1.image} alt={data.name}  />
+                      <img src={matchingDataV1.image} alt={data.name}  alt="coin icon"/>
                       <div className='tittle'>
                         <div >{data.name} </div> 
                         <div className='dot'>•</div>

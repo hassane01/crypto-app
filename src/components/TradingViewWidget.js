@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, memo } from 'react';
-import { useParams } from 'react-router-dom';
 function TradingViewWidget({symbol}) {
     
     const container = useRef();
-    const name = useParams()
-    {console.log('symbol:',symbol)}
+    
+    
   useEffect(
     () => {
         
@@ -35,7 +34,7 @@ function TradingViewWidget({symbol}) {
         }`;
       container.current.appendChild(script);
     },
-    []
+    [symbol]
   );
 
   return (

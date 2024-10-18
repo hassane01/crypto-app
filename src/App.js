@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import { ContextCrypto } from './Helpers/Context';
-import Serach from './components/Serach';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import CoinData from './components/CoinData';
 
