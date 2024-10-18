@@ -48,7 +48,7 @@ const Home = () => {
                     <td>{data.rank}</td>
                     <td id='imgname'>
                       <div className='imgname'>
-                      <img src={matchingDataV1.image} alt={data.name}  alt="coin icon"/>
+                      <img src={matchingDataV1.image} alt={data.name} />
                       <div className='tittle'>
                         <div >{data.name} </div> 
                         <div className='dot'>•</div>
