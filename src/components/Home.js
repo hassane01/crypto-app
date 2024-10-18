@@ -76,7 +76,7 @@ const Home = () => {
                     </td>
                   </tr>
                 );
-              } 
+              } return null
             })}
           </tbody>
         </table>
