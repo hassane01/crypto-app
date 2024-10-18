@@ -1,0 +1,25 @@
+.search{
+    width: 100%;
+    text-align: center;
+
+}
+input {
+    width: 30%;
+    height: 35px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius:10px ;
+    padding-left: 10px;
+    transition: all 0.7s;
+
+}
+input:focus{
+    padding:0px 30px;
+}
+
+@media(max-width:600px){
+    input{ width: 65%;}
+}

@@ -1,0 +1,191 @@
+body{
+    background-color: #0e0e0e;
+    font-size: 15px;
+}
+.home{
+    width: 100%;
+
+}
+img{
+    width: 40px;
+    margin-right: 20px;
+    
+}
+.dot{
+    margin: 0 10px;
+}
+#imgname{
+    width:150px;
+}
+.symbol{
+    margin-left: 10px;
+}
+.imgname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+
+
+}
+.tittle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    
+}
+thead{
+    color: #3d3c3b;
+    height: 50px;
+}
+
+h1{
+    color: white;
+}
+#change{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #07391d;
+    color: #468a2b;
+    width: auto;
+    border-radius: 10px;
+    height: 40px;
+}
+#red{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a0808;
+    color: #df413b;
+    width: auto;
+    border-radius: 10px;
+    height: 40px;
+}
+#greeni{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #468a2b;
+    width: auto;
+    border-radius: 10px;
+    height: 40px;
+}
+#redi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a0808;
+    color: #df413b;
+    width: auto;
+    border-radius: 10px;
+    height: 40px;
+}
+
+button{
+    height: 30px;
+    width: 100%;    
+    background-color: transparent;
+    color: #F3F8FF;
+    border:1px solid #F3F8FF;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 40px;
+}
+
+
+
+#scroll-container {
+height: 80px;
+
+overflow: hidden;
+}
+
+.scroll-text {
+/* animation properties */
+color: white;
+display: flex;
+flex-direction: row;
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+
+
+-moz-animation: my-animation 35s linear infinite;
+-webkit-animation: my-animation 35s linear infinite;
+animation: my-animation 35s linear infinite;
+}
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+  .datacoin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .datacoin img {
+    width: 60px;
+  }
+  .datacoin p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+  }
+  .datacoin p:nth-child(3){
+    font-weight: bolder;
+    color: gray;
+  }
+
+  @media(max-width:1040px){
+    button{
+        font-size: 10px;
+    }
+  }
+  
